@@ -8,8 +8,9 @@ def profile(fn=None):
     profiler = Profile()
 
     def decorator(*args, **kwargs):
+        result = None
         try:
-            profiler.runcall(fn, *args, **kwargs)
+            result = profiler.runcall(fn, *args, **kwargs)
         finally:
             profiler.dump_stats('profilestats.prof')
             stats = pstats.Stats(profiler)
@@ -17,4 +18,5 @@ def profile(fn=None):
             with file('cachegrind.out.profilestats', "wb") as f:
                 conv.output(f)
             stats.strip_dirs().sort_stats('cumulative').print_stats(10)
+        return result
     return decorator
