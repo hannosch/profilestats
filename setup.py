@@ -3,7 +3,7 @@ from setuptools import setup
 
 setup(
     name='profilestats',
-    version='1.0.1',
+    version='1.0.2dev',
     author='Hanno Schlichting',
     author_email='hannosch@plone.org',
     url='http://pypi.python.org/pypi/profilestats',
