@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='profilestats',
-    version='1.0.2',
+    version='1.0.3dev',
     author='Hanno Schlichting',
     author_email='hanno@hannosch.eu',
     url='http://pypi.python.org/pypi/profilestats',
