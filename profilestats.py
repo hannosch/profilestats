@@ -15,7 +15,7 @@ def profile(fn=None):
             profiler.dump_stats('profilestats.prof')
             stats = pstats.Stats(profiler)
             conv = pyprof2calltree.CalltreeConverter(stats)
-            with file('cachegrind.out.profilestats', "wb") as f:
+            with open('cachegrind.out.profilestats', "w") as f:
                 conv.output(f)
             stats.strip_dirs().sort_stats('cumulative').print_stats(10)
         return result
