@@ -10,7 +10,7 @@ setup(
     description='Decorator for profiling individual functions and converting '
                 'profiling data to the kcachegrind format.',
     long_description=open("README.txt").read(),
-    classifiers = [
+    classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',

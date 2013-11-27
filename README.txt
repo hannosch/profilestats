@@ -2,7 +2,7 @@ Overview
 ========
 
 This module contains a simple helper decorator which allows you to profile
-a function and write the profiling data to the filesystem in both the pstats
+a function and write the profiling data to the file system in both the pstats
 and the kcachegrind format.
 
 The decorator can be used as::
