@@ -8,9 +8,11 @@ with open(os.path.join(here, 'README.rst')) as f:
 with open(os.path.join(here, 'CHANGES.rst')) as f:
     CHANGES = f.read()
 
+__version__ = '1.1dev'
+
 setup(
     name='profilestats',
-    version='1.0.3dev',
+    version=__version__,
     author='Hanno Schlichting',
     author_email='hanno@hannosch.eu',
     url='http://pypi.python.org/pypi/profilestats',
