@@ -1,3 +1,8 @@
+bin
 build
 dist
-profilestats.prof
+include
+lib
+man
+share
+*.out

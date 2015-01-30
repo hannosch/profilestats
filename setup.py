@@ -8,7 +8,7 @@ with open(os.path.join(here, 'README.rst')) as f:
 with open(os.path.join(here, 'CHANGES.rst')) as f:
     CHANGES = f.read()
 
-__version__ = '1.1dev'
+__version__ = '2.0'
 
 setup(
     name='profilestats',
@@ -16,16 +16,18 @@ setup(
     author='Hanno Schlichting',
     author_email='hanno@hannosch.eu',
     url='http://pypi.python.org/pypi/profilestats',
-    keywords='profile kcachegrind',
+    keywords='profile kcachegrind qcachegrind',
     description='Decorator for profiling individual functions and converting '
-                'profiling data to the kcachegrind format.',
+                'profiling data to the kcachegrind/qcachegrind format.',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[
         'Intended Audience :: Developers',
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
+        'Programming Language :: Python :: 2',
         'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
