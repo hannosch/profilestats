@@ -1,7 +1,7 @@
 Changelog
 =========
 
-2.0 (unreleased)
+2.0 (2015-01-30)
 ----------------
 
 - Changed default behavior. Profile data is now accumulated over multiple
