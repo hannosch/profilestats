@@ -35,3 +35,15 @@ You can pass the following arguments to the decorator:
 
 * `callgrind_filename` (default: 'callgrind.out') - The filename for
   the profile data in k/qcachegrind's format.
+
+* `dump_dir` (default: '') - The path to put dumps in
+
+* `generate_callgrind` (default: True) - Whether or not to generate
+  callgrind dumps
+
+* `generate_profile` (default: True) - Whether or not to generate
+  profile dumps
+
+* `profile_per_thread` (default: False) - Generate a profile per
+  thread, using the thread name and putting them in the selected
+  dump_dir with the filename <threadname>.<type_filename_as_specified>
