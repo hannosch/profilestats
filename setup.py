@@ -34,7 +34,6 @@ setup(
     ],
     license='BSD',
     install_requires=[
-        'setuptools',
         'pyprof2calltree',
     ],
     py_modules=['profilestats'],
